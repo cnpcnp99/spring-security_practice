@@ -1,5 +1,6 @@
 package com.cos.security1.model;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
@@ -11,7 +12,7 @@ import javax.persistence.Id;
 import java.sql.Timestamp;
 
 @Entity
-@Getter @Setter
+@Data
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
